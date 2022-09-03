@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile/app.dockerfile
+    command: php bin/app.php
+    restart: on-failure
+  cron:
+    build:
+      context: .
+      dockerfile: Dockerfile/cron.dockerfile

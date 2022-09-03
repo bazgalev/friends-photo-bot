@@ -1,0 +1,20 @@
+{
+  "name": "bazgalev/bazgalev",
+  "require": {
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.0",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-zip": "*",
+    "monolog/monolog": "^3.0",
+    "symfony/rate-limiter": "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/app/",
+      "Telegram\\": "src/modules/Telegram/",
+      "Vk\\": "src/modules/Vk/",
+      "Core\\": "src/modules/Core/"
+    }
+  }
+}

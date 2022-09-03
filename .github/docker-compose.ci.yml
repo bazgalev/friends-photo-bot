@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  app:
+    image: ${DOCKER_REGISTRY}/${IMAGE_NAME}-app:${IMAGE_TAG:-main}
+    restart: on-failure
+  crontab:
+    image: ${DOCKER_REGISTRY}/${IMAGE_NAME}-crontab:${IMAGE_TAG:-main}
+    restart: on-failure
